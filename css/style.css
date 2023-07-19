@@ -33,16 +33,14 @@ body{
     width: 60px;
     margin-right: 10px;
 }
-.logo-text{
-    background: var(--linear);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.logo-text {
+    color: #ff42a5;
     font-size: 45px;
     font-weight: 700;
-}
-.logo-text-dark{
-    color: #0B0223;
+  }
+  
+.logo-text-dark {
+color: #0B0223;
 }
 .menu{
     display: flex;
@@ -115,6 +113,113 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+/* We are Gamer Section CSS */
+#gamer{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.gamer-image img{
+    width: 550px;
+}
+.gamer-content{
+    width: 520px;
+    text-align: right;
+}
+.gamer-title{
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gamer-description{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+.comment-title{
+    color: #534C64;
+    font-size: 22px;
+    font-weight: 500;
+}
+.comment-content{
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Online Games Funny Videos */
+.videos-title{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+.videos-description{
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.funny-videos-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.video-details{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+.video-item{
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.video-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+.video-item::after i{
+    font-size: 36px;
+    color: #fff;
+  }
+.video-item:hover::after {
+    opacity: 1;
+  }
+
+.video-image{
+    display: block;
+    height: auto;
+    width: 100%;;
+}
+.video-item:hover .play-icon {
+    opacity: 1;
+  }
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
 
 
 
@@ -132,6 +237,11 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .text-red{
     color: red;
 }
@@ -144,8 +254,9 @@ body{
     align-items: flex-start;
     gap: 10px;
     border-radius: 48px;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background: var(--linear);
     color: #FFF;
+    border: none;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -157,13 +268,19 @@ body{
     gap: 10px;
     border-radius: 48px;
     background: #4EC5F7;
+    border: none;
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
 
 }
-
+.mt-10{
+    margin-top: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
     /* Resposive CSS */
 
 /* Extra Small */
@@ -187,7 +304,7 @@ body{
         margin-top: 10px;
     }
     .hero-content{
-        margin-top: 80px;
+        margin-top: 30px;
     }
     .hero-summry{
         font-size: 35px;
@@ -198,9 +315,21 @@ body{
     .hero-image img{
         width: 100%;
     }
+    .gamer-image img {
+        width: 100%;
+    }
     .primary-button, .secondary-button{
         padding: 20px 20px;
         font-size: 20px;
+    }
+    .gamer-content{
+        width: auto;
+        text-align: center;
+    }
+    .funny-videos-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
   }
   
@@ -214,6 +343,9 @@ body{
         flex-direction: column;
         justify-content: flex-start;
     }
+    #hero-flex{
+        flex-direction: column-reverse;
+    }
     /* Header Resposive CSS For Small Mobile */
     .menu{
         flex-direction: column;
@@ -222,10 +354,22 @@ body{
         margin-top: 10px;
     }
     .hero-content{
-        margin-top: 80px;
+        margin-top: 30px;
     }
     .hero-image img{
         width: 100%;
+    }
+    .gamer-image img {
+        width: 100%;
+    }
+    .gamer-content{
+        width: auto;
+        text-align: center;
+    }
+    .funny-videos-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
   }
   
@@ -240,8 +384,18 @@ body{
         justify-content: flex-start;
     }
     .hero-content{
-        margin: 80px auto 0;
+        margin: 30px auto 0;
     }
+    .gamer-content{
+        width: auto;
+        text-align: center;
+    }
+    .funny-videos-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
   }
 
   /* Tablet */
