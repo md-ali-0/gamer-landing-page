@@ -69,7 +69,56 @@ body{
     padding: 10px 20px 10px 0px;
 }
 
-/*  */
+    /* App Main CSS */
+
+/* Hero CSS */
+#hero{
+    background: url("../images/Group 14.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.hero-summry{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hero-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.hero-description-list{
+    list-style: none;
+}
+.hero-description-list li{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 5px 10px 5px;
+}
+.hero-description-list i {
+    width: 24px;
+    height: 24px;
+}
+.hero-image img{
+    width: 540px;
+}
+.hero-buttons {
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
 .container{
     width: 100%;
     padding-right: 20px;
@@ -89,6 +138,34 @@ body{
 .text-write{
     color: #fff;
 }
+.primary-button{
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.secondary-button{
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+    /* Resposive CSS */
+
 /* Extra Small */
 @media screen and (max-width: 575.98px) {
     .container {
@@ -109,6 +186,22 @@ body{
     .menu-right{
         margin-top: 10px;
     }
+    .hero-content{
+        margin-top: 80px;
+    }
+    .hero-summry{
+        font-size: 35px;
+    }
+    .hero-title{
+        font-size: 70px;
+    }
+    .hero-image img{
+        width: 100%;
+    }
+    .primary-button, .secondary-button{
+        padding: 20px 20px;
+        font-size: 20px;
+    }
   }
   
   /* Small */
@@ -128,6 +221,12 @@ body{
     .menu-right{
         margin-top: 10px;
     }
+    .hero-content{
+        margin-top: 80px;
+    }
+    .hero-image img{
+        width: 100%;
+    }
   }
   
   /* Medium */
@@ -139,6 +238,9 @@ body{
     .row {
         flex-direction: column;
         justify-content: flex-start;
+    }
+    .hero-content{
+        margin: 80px auto 0;
     }
   }
 
