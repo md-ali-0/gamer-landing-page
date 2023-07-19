@@ -244,6 +244,7 @@ color: #0B0223;
 }
 .play-instant-image{
     position: relative;
+    width: 450px;
 }
 .play-instant-image .one{
     width: 100%;
@@ -254,6 +255,35 @@ color: #0B0223;
     margin-top: -180px;
     margin-left: -86px;
 }
+
+/* Games Categories CSS */
+#categories{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.categories-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }  
+.category-item{
+    flex-basis: calc(20% - 10px);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: border 0.1s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+.category-item:hover{
+    border-radius: 50px;
+    border: 2px solid #F948B2;
+    background: #FFF;
+}
+.category-item img{
+    
+}
+
 
 
 .container{
@@ -383,6 +413,15 @@ section{
         margin-top: -140px;
         margin-left: 10px;
     }
+    .play-instant-image {
+        width: auto;
+    }
+    .category-item {
+        flex-basis: calc(33.33% - 10px);
+      }
+    .category-item{
+        display: block;
+    }
   }
   
   /* Small */
@@ -439,6 +478,15 @@ section{
         width: 150px;
         margin-top: -140px;
         margin-left: 10px;
+    }
+    .play-instant-image {
+        width: auto;
+    }
+    .category-item {
+        flex-basis: calc(33.33% - 10px);
+      }
+    .category-item{
+        display: block;
     }
   }
   
