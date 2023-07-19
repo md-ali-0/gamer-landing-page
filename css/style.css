@@ -155,6 +155,12 @@ color: #0B0223;
     font-size: 48px;
     font-weight: 700;
 }
+.gradient-text{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .videos-description{
     color: #534C64;
     text-align: center;
@@ -221,7 +227,33 @@ color: #0B0223;
     pointer-events: none;
   }
 
-
+/* Play Instantly CSS */
+.play-instant-content{
+    text-align: right;
+}
+.play-instant-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+.play-instant-description{
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.play-instant-image{
+    position: relative;
+}
+.play-instant-image .one{
+    width: 100%;
+}
+.play-instant-image .two{
+    border-radius: 8px;
+    width: 200px;
+    margin-top: -180px;
+    margin-left: -86px;
+}
 
 
 .container{
@@ -247,6 +279,9 @@ section{
 }
 .text-write{
     color: #fff;
+}
+.text-pink{
+    color: #F948B2;
 }
 .primary-button{
     display: inline-flex;
@@ -326,10 +361,27 @@ section{
         width: auto;
         text-align: center;
     }
+    .play-instant-title{
+        font-size: 28px;
+        text-align: center;
+    }
+    .videos-title{
+        font-size: 28px;
+    }
     .funny-videos-list{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+    }
+    .play-instant-image .one {
+        width: 75%;
+        margin-left: 70px;
+    }
+    .play-instant-image .two {
+        border-radius: 8px;
+        width: 150px;
+        margin-top: -140px;
+        margin-left: 10px;
     }
   }
   
@@ -366,10 +418,27 @@ section{
         width: auto;
         text-align: center;
     }
+    .videos-title{
+        font-size: 28px;
+    }
+    .play-instant-title{
+        font-size: 28px;
+        text-align: center;
+    }
     .funny-videos-list{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+    }
+    .play-instant-image .one {
+        width: 75%;
+        margin-left: 70px;
+    }
+    .play-instant-image .two {
+        border-radius: 8px;
+        width: 150px;
+        margin-top: -140px;
+        margin-left: 10px;
     }
   }
   
