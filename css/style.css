@@ -25,7 +25,6 @@ body{
 }
 .logo{
     display: flex;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -280,10 +279,81 @@ color: #0B0223;
     border: 2px solid #F948B2;
     background: #FFF;
 }
-.category-item img{
-    
-}
 
+/* Footer CSS */
+#footer{
+    background: #0B0223;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo img{
+    width: 60px;
+    margin-right: 10px;
+}
+.footer-logo-text {
+    color: #ff42a5;
+    font-size: 45px;
+    font-weight: 700;
+  }
+.footer-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+}
+.footer-menu a{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.footer-social-link {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 0fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 5px;
+}
+.footer-social-link a{
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.footer-page-link{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 5px;
+}
+.footer-page-link a{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-wrap: nowrap;
+    margin: 15px;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 
 .container{
@@ -303,11 +373,13 @@ section{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
+.text-center{
+    text-align: center;
+}
 .text-red{
     color: red;
 }
-.text-write{
+.text-white{
     color: #fff;
 }
 .text-pink{
@@ -422,6 +494,12 @@ section{
     .category-item{
         display: block;
     }
+    .footer-social-link {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    .footer-page-link{
+        grid-template-columns: repeat(2, 1fr);
+    }
   }
   
   /* Small */
@@ -466,7 +544,7 @@ section{
     }
     .funny-videos-list{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
     .play-instant-image .one {
@@ -487,6 +565,12 @@ section{
       }
     .category-item{
         display: block;
+    }
+    .footer-social-link {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .footer-page-link{
+        grid-template-columns: repeat(1, 1fr);
     }
   }
   
